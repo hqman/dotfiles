@@ -36,6 +36,9 @@ Plug 'https://github.com/Xuyuanp/nerdtree-git-plugin'
 Plug 'https://github.com/kien/ctrlp.vim'
 Plug 'https://github.com/kien/ctrlp.vim'
 Plug 'https://github.com/airblade/vim-gitgutter'
+Plug 'https://github.com/Raimondi/delimitMate'
+Plug 'https://github.com/altercation/vim-colors-solarized'
+Plug 'https://github.com/tpope/vim-fugitive'
 
 call plug#end()
 
