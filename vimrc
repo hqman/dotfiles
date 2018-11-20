@@ -63,4 +63,5 @@ set autowrite     " Automatically :write before running commands
 set smartindent
 set cin
 set showmatch
-
+"make jj do esc"
+inoremap jj <Esc>
