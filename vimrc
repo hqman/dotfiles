@@ -1,3 +1,4 @@
+set clipboard=unnamed
 set backspace=2   " Backspace deletes like most programs in insert mode
 set history=50
 set ruler         " show the cursor position all the time
@@ -27,6 +28,7 @@ set sw=4
 call plug#begin('~/.vim/plugged')
 
 
+Plug 'https://github.com/tpope/vim-surround'
 Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/vim-airline/vim-airline-themes'
 Plug 'https://github.com/rking/ag.vim'
@@ -39,7 +41,8 @@ Plug 'https://github.com/airblade/vim-gitgutter'
 Plug 'https://github.com/Raimondi/delimitMate'
 Plug 'https://github.com/altercation/vim-colors-solarized'
 Plug 'https://github.com/tpope/vim-fugitive'
-
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'honza/vim-snippets'
 call plug#end()
 
 set number
@@ -65,3 +68,15 @@ set cin
 set showmatch
 "make jj do esc"
 inoremap jj <Esc>
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'

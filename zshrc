@@ -62,7 +62,7 @@ ZSH_THEME="kai"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx    autojump   docker-compose  )
+plugins=(git osx    autojump   docker-compose docker zsh-completions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,20 +97,28 @@ alias code="/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/co
 alias zshconfig="code ~/.zshrc"
 alias hg='history | grep '
 alias y='yarn'
+alias dk='docker'
+alias pin='pipenv install --skip-lock'
 
 alias vps="mosh --ssh='ssh -p 5678' vhost"
 
 alias mdata="sudo diskutil mount /dev/disk0s2"
-alias acv="cd ~/projects/smq3/api_server;source ~/projects/smq3/venv/bin/activate;"
+alias acv="cd ~/projects/smq3/api_server;pipenv shell"
+alias rm='safe-rm'
 
 alias vimrc="vim ~/.vimrc"
+alias c="code ."
+alias kcp="~/.boot/client_darwin_amd64 -c ~/.boot/kcp_client_conf.json > /dev/null 2>>&1 &"
+alias find_large50="sudo du -a / | sort -n -r | head -n 50"
+
 
 PATH=$PATH:/usr/local/Cellar/aria2/1.27.1/bin
 
 
-export FLASK_APP=run.py
+export FLASK_APP=/Users/hqman/projects/smq3/api_server/run.py
 export FLASK_DEBUG=1
 export FLASK_ENV=development
+# export FLASK_ENV=production
 # source ~/.bash_profile
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
@@ -121,13 +129,26 @@ export MYSQL_PORT=33006
 export MYSQL_HOST=0.0.0.0
 # export ALL_PROXY=socks5://127.0.0.1:1080
 
+export APP_ID=wx098254aed48aae14
+export APP_SECRET=95716d4e6cabab486f83d00e52305828
 export PYTHONDONTWRITEBYTECODE=1  #禁用字节码（.pyc）文件 不产生 __pycache__
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
  eval "$(pyenv init -)"
 fi
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH:$HOME/.cargo/bin"
+# source /Users/hqman/.pyenv/shims/activate.sh
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home
+export PATH=$JAVA_HOME/bin:$PATH:.
+export CLASSPATH=$JAVA_HOME/lib/tools.jar:$JAVA_HOME/lib/dt.jar:.
