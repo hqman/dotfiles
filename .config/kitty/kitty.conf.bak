@@ -11,13 +11,13 @@ bold_font        auto
 italic_font      auto
 bold_italic_font auto
 
-font_size  15.6
-background_opacity 0.85
+font_size 15.8
+# background_opacity 0.8
 enabled_layouts tall:bias=70;full_size=1;mirrored=false
 term  xterm-256color
 
 # BEGIN_KITTY_THEME
-# Cobalt2
+# Atom
 include current-theme.conf
 # END_KITTY_THEME
 #
@@ -27,14 +27,10 @@ map ctrl+] layout_action increase_num_full_size_windows
 
 
 # neovim
-#map cmd+s send_text normal,application \x1b w
-map cmd+s send_text all \x1b w
+map cmd+s send_text normal,application \x1b w
 map cmd+shift+r load_config_file
-map cmd+g send_text all \x02 g
 
-#map cmd+a send_text normal,application \x1b ggVG
 
-map cmd+a send_text all \x1bggVG
 map cmd+c        copy_to_clipboard
 map cmd+v        paste_from_clipboard
 map shift+insert paste_from_clipboard
@@ -45,6 +41,3 @@ mouse_map ctrl+left press ungrabbed,grabbed mouse_click_url
 macos_option_as_alt yes
 
 shell .
-
-confirm_os_window_close 0
-

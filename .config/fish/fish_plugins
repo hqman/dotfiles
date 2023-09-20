@@ -4,3 +4,5 @@ oh-my-fish/plugin-peco
 jethrokuan/fzf
 joshmedeski/fish-lf-icons
 jorgebucaran/fisher
+lilyball/nix-env.fish
+kidonng/nix-completions.fish

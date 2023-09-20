@@ -1,0 +1,36 @@
+gui:
+  showIcons: true
+  showFileTree: true
+  scrollHeight: 2
+  scrollPastBottom: true
+  mouseEvents: true
+  skipDiscardChangeWarning: false
+  skipStashWarning: true
+  sidePanelWidth: 0.3333
+  expandFocusedSidePanel: false
+  mainPanelSplitMode: flexible
+  theme:
+    lightTheme: false # For terminals with a light background
+    activeBorderColor:
+      - green
+      - bold
+    inactiveBorderColor:
+      - "#83838A"
+    optionsTextColor:
+      - blue
+    selectedLineBgColor:
+      - black
+    selectedRangeBgColor:
+      - blue
+  showFileTree: true # for rendering changes files in a tree format
+git:
+  log:
+    showGraph: always
+    branchLogCmd: "git log --graph --abbrev-commit --decorate --format=format:'%C(bold white)%s%C(reset) %C(dim white)- %ar %C(white)%d%C(reset)' master..{{branchName}} --"
+  overrideGpg: true
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+keybinding:
+  universal:
+    quit: "q"

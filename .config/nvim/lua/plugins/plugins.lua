@@ -9,4 +9,6 @@ return {
       colorscheme = "cobalt2",
     },
   },
+  -- disable trouble
+  { "echasnovski/mini.surround", enabled = false },
 }
