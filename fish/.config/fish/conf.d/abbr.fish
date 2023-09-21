@@ -26,3 +26,4 @@ abbr tn "tmux new -t"
 abbr vf 'fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 abbr lg lazygit
 abbr c code
+abbr lla 'ls -ali'

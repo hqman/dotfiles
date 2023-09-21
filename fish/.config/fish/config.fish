@@ -1,3 +1,4 @@
+# fish config file
 if status is-interactive
     # Commands to run in interactive sessions can go here
 end
@@ -31,9 +32,9 @@ function fish_hybrid_key_bindings --description \
     fish_vi_key_bindings --no-erase
 end
 set -g fish_key_bindings fish_hybrid_key_bindings
-
+fish_add_path -m ~/.local/bin
 pyenv init - | source
-
+zoxide init fish | source
 # set Theme colors
 set -U fish_color_normal normal
 set -U fish_color_command 99cc99
