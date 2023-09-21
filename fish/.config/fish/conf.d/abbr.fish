@@ -10,12 +10,12 @@ abbr binc "brew info --cask"
 abbr bs "brew search"
 
 abbr reload "source ~/.config/fish/config.fish"
-abbr g git
-abbr tree 'exa --tree'
+abbr tree 'exa --tree --level=3'
 # abbr cat bat
 abbr gcm 'git commit -am'
 abbr g git
 abbr gs 'git status'
+abbr ga 'git add'
 abbr gb 'git branch'
 abbr gco 'git checkout'
 abbr gp 'git push origin "$(git_current_branch)"'
