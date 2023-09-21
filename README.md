@@ -1,2 +1,5 @@
-# dotfiles
-my dotfiles
+# dotfiles for Mac
+
+```
+run setup.sh 
+```
