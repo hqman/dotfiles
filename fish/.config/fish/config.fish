@@ -18,7 +18,11 @@ set -Ux VISUAL nvim
 set -Ux BAT_THEME TwoDark
 
 set -Ux XDG_CONFIG_HOME "$HOME/.config"
-
+command -qv nvim && alias vim nvim
+if type -q exa
+    alias ll "exa -l -g --icons"
+    alias lla "ll -a"
+end
 #test
 set -x HOMEBREW_NO_INSTALL_FROM_API 1
 
