@@ -6,7 +6,7 @@ vim.api.nvim_exec(
   [[
   augroup TmuxAutoSource
       autocmd!
-      autocmd bufwritepost tmux.conf execute ':!tmux source-file %'
+      autocmd bufwritepost .tmux.conf execute ':!tmux source-file %'
   augroup END
 ]],
   false

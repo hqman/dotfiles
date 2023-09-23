@@ -39,3 +39,5 @@ map mf mkfile
 map md mkdir
 map C clear
 map . set hidden!
+map Y yank dir
+
