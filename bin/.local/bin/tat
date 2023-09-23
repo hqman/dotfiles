@@ -1,0 +1,32 @@
+#!/bin/bash
+
+session_name="$(basename $PWD | tr . -)"
+echo "session_name : $session_name"
+
+session_exists() {
+	tmux list-sessions | sed -E 's/:.*$//' | grep -q "^$session_name$"
+}
+
+not_in_tmux() {
+	[ -z "$TMUX" ]
+}
+
+pane_config() {
+	tmux split-window -vb -t "$session_name" -c $PWD -p 80
+	tmux send-keys -t "$session_name" "nvim '+Telescope find_files'" Enter
+}
+
+if not_in_tmux; then
+	tmux new-session -A -s "$session_name" -c $PWD
+	pane_config
+else
+	if ! session_exists; then
+		(
+			TMUX=''
+			tmux new-session -Ad -s "$session_name" -c $PWD
+		)
+		pane_config
+	fi
+	tmux switch-client -t "$session_name"
+fi
+exit 1
