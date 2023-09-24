@@ -1,7 +1,7 @@
 return {
   -- tmux vim
   { "christoomey/vim-tmux-navigator" },
-  { "which-key.nvim", enabled = false },
+  { "which-key.nvim", enabled = true },
   { "mg979/vim-visual-multi" },
   {
     "LazyVim/LazyVim",

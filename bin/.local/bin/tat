@@ -1,6 +1,7 @@
 #!/bin/bash
 
 session_name="$(basename $PWD | tr . -)"
+
 echo "session_name : $session_name"
 
 session_exists() {
