@@ -25,4 +25,5 @@ abbr tls "tmux ls"
 abbr vf 'fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim'
 abbr lg lazygit
 abbr c code
+abbr lf lfcd
 abbr lla 'ls -ali'
