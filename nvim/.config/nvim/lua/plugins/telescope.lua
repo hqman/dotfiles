@@ -29,7 +29,7 @@ return {
       prompt_prefix = "   ",
       layout_config = {
         height = 0.8,
-        width = 0.5,
+        width = 0.6,
         prompt_position = "top",
       },
       preview = { hide_on_startup = true },
