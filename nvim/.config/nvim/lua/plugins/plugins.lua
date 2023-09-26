@@ -9,6 +9,15 @@ return {
       colorscheme = "cobalt2",
     },
   },
-  -- disable trouble
   { "echasnovski/mini.surround", enabled = false },
+  {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    opts = {
+      modes = {
+        --disable f mode
+        char = { enabled = false },
+      },
+    },
+  },
 }
