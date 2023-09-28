@@ -1,0 +1,66 @@
+{
+	"name": "Vimium C",
+	"@time": "9/25/2023, 1:00:55 PM",
+	"time": 1695618055551,
+	"environment": {
+		"extension": "1.99.994",
+		"platform": "mac",
+		"chromium": 119
+	},
+	"allBrowserUrls": true,
+	"exclusionRules": [
+		{
+			"passKeys": "",
+			"pattern": ":https://mail.google.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://leetcode.cn/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://config.qmk.fm/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://thepracticetest.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://10fastfingers.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://monkeytype.com/"
+		},
+		{
+			"passKeys": "",
+			"pattern": ":https://typingland.higopage.com/"
+		}
+	],
+	"keyLayout": 2,
+	"keyMappings": [
+		"#!no-check",
+		"map yt createTab url=\"https://youtube.com\"",
+		" ",
+		"map gh createTab url=\"https://github.com\"",
+		"",
+		"map tx createTab url=\"https://twitter.com\"",
+		"",
+		"map pt createTab url=\"https://chat.openai.com/\"",
+		"map bb createTab url=\"https://bilibili.com/\"",
+		"",
+		"map mt createTab url=\"https://monkeytype.com/\"",
+		"",
+		"map <c-p> Vomnibar.activateTabs",
+		""
+	],
+	"newTabUrl": "edge://split-window-starting-page/",
+	"searchEngines": [
+		"gi: https://github.com/search?q=%s github",
+		"g: https://www.google.ie/search?q=%s Google search",
+		""
+	],
+	"searchUrl": "https://www.google.com/search?q=$s",
+	"vimSync": true
+}

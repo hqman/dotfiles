@@ -33,4 +33,3 @@ keymap("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true,
 -- vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 -- 定义一个用于执行 :qa 的快捷键（在这个例子中使用 Ctrl-Q）
 keymap("n", "<C-Q>", ":qa<CR>", { noremap = true, silent = true })
-print("update keymap...")

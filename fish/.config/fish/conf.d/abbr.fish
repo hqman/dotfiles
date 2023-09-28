@@ -2,7 +2,6 @@ function git_current_branch
     echo (git symbolic-ref --short -q HEAD)
 end
 
-abbr v nvim
 abbr nv "nvim ."
 abbr bic "brew install --cask"
 abbr bin "brew info"
@@ -27,3 +26,5 @@ abbr lg lazygit
 abbr c code
 abbr lf lfcd
 abbr lla 'ls -ali'
+abbr sycn 'unison logseq'
+abbr so source

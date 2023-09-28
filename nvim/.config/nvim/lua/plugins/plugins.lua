@@ -2,7 +2,8 @@ return {
   -- tmux vim
   { "christoomey/vim-tmux-navigator" },
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },
-  { "which-key.nvim", enabled = true },
+  { "folke/noice.nvim", enabled = false },
+  { "which-key.nvim", enabled = false },
   { "mg979/vim-visual-multi" },
   {
     "LazyVim/LazyVim",

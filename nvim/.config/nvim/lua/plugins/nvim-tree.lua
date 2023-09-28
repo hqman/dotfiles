@@ -21,6 +21,15 @@ return {
         -- 打开文件时关闭
         quit_on_open = true,
       },
+      change_dir = {
+        enable = true,
+        global = true,
+      },
+    },
+    renderer = {
+      indent_markers = {
+        enable = true,
+      },
     },
   },
 }

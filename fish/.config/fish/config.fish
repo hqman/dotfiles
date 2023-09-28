@@ -22,6 +22,7 @@ if type -q exa
     alias ll "exa -l -g --icons"
     alias lla "ll -a"
 end
+alias v nvim
 #test
 set -x HOMEBREW_NO_INSTALL_FROM_API 1
 

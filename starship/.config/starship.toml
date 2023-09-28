@@ -1,11 +1,11 @@
 
 [c]
 format = '(via [$symbol($version(-$name) )]($style))'
-
+[lua]
+disabled = true
 
 [golang]
 
-disabled = true
 
 
 [nodejs]
