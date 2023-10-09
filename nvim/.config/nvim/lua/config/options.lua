@@ -12,3 +12,4 @@ opt.wrap = true
 opt.linebreak = true
 opt.number = false
 vim.g.autoindent = true
+vim.o.swapfile = false -- 禁用交换文件
