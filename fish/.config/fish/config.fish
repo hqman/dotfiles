@@ -5,7 +5,7 @@ end
 set -gx VOLTA_HOME "$HOME/.volta"
 set -gx PATH "$VOLTA_HOME/bin" $PATH
 
-source /Users/bella/.docker/init-fish.sh || true # Added by Docker Desktop
+#source /Users/bella/.docker/init-fish.sh || true # Added by Docker Desktop
 starship init fish | source
 
 set -Ux EDITOR nvim
@@ -77,4 +77,3 @@ set -U fish_color_option
 set -U fish_pager_color_secondary_description
 set -U fish_color_host_remote
 set -U fish_color_keyword
-#. /Users/$USER/.nix-profile/etc/profile.d/nix.sh
