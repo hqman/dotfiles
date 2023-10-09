@@ -15,7 +15,7 @@ keymap("n", "<leader>Q", ":quitall!<CR>", { silent = true, desc = "Quit Neovim" 
 keymap("n", "<leader>W", ":wall<CR>", { silent = true, desc = "Write All" })
 keymap("n", "<leader>tq", ":tabclose<CR>", { silent = true, desc = "Tab Close" })
 
-keymap("n", "<C-x>", ":bd<CR>", { silent = true, noremap = true, desc = "close a  buffer" })
+keymap("n", "<leader>x", ":bd<CR>", { silent = true, noremap = true, desc = "close a  buffer" })
 -- Unmap mappings used by tmux plugin
 vim.keymap.del("n", "<C-h>")
 vim.keymap.del("n", "<C-j>")
