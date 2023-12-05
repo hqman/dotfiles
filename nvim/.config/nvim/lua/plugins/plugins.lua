@@ -1,4 +1,5 @@
 return {
+  { "projekt0n/github-nvim-theme" },
   -- tmux vim
   { "christoomey/vim-tmux-navigator" },
   { "nvim-neo-tree/neo-tree.nvim", enabled = false },

@@ -19,9 +19,9 @@ return {
       enable = true,
       keymaps = {
         init_selection = "<cr>",
-        node_incremental = "g]",
-        scope_incremental = "g]",
-        node_decremental = "g[",
+        -- node_incremental = "g]",
+        -- scope_incremental = "g]",
+        -- node_decremental = "g[",
       },
     },
   },

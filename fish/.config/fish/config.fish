@@ -23,6 +23,7 @@ if type -q exa
     alias lla "ll -a"
 end
 alias v nvim
+alias j z
 #test
 set -x HOMEBREW_NO_INSTALL_FROM_API 1
 
@@ -77,3 +78,10 @@ set -U fish_color_option
 set -U fish_pager_color_secondary_description
 set -U fish_color_host_remote
 set -U fish_color_keyword
+
+# pnpm
+set -gx PNPM_HOME /Users/bella/Library/pnpm
+if not string match -q -- $PNPM_HOME $PATH
+    set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

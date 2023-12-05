@@ -13,7 +13,7 @@ return {
       -- add a keymap to browse plugin files
       -- stylua: ignore
       -- change a keymap
-      { "<C-p>", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
+     -- { "<C-p>", "<cmd>Telescope find_files<CR>", desc = "Find Files" },
     {
       "<leader>fp",
       function()
