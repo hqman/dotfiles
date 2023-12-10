@@ -11,7 +11,7 @@ return {
       side = "left",
     },
     filters = {
-      dotfiles = true,
+      dotfiles = false,
       custom = { "node_modules" },
     },
     actions = {

@@ -16,7 +16,7 @@ enabled_layouts tall:bias=70;full_size=1;mirrored=false
 term  xterm-256color
 
 # BEGIN_KITTY_THEME
-# Dracula
+# Cobalt2
 include current-theme.conf
 # END_KITTY_THEME
 #
