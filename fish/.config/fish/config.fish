@@ -40,6 +40,7 @@ set -g fish_key_bindings fish_hybrid_key_bindings
 fish_add_path -m ~/.local/bin
 pyenv init - | source
 zoxide init fish | source
+set --export FZF_DEFAULT_OPTS '--cycle --layout=reverse --border --height=90% --preview-window=wrap --marker="*"'
 # set Theme colors
 set -U fish_color_normal normal
 set -U fish_color_command 99cc99
